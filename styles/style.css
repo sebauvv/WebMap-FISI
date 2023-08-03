@@ -85,10 +85,11 @@
     width: 25%;
     float:left;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: top;
     height: 100%;
     color: #fff;
+    padding: 100px;
  }
  #slides .slide_1 {
     background: #00171F;
@@ -171,4 +172,8 @@
        margin: 0 auto;
     }
  }
+
+ ::-webkit-scrollbar {
+    display: none;
+}
 
