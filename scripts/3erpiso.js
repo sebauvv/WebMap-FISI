@@ -46,7 +46,7 @@ matricula.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 matricula.on('click', function (e) {
-  var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+  var popupContent = "<center><h2>Matricula</h2></center><p>Oficina encargada con las gestiones respecto a la matricula y rectificaciones de los alumnos de la facultad.</p>";
   this.bindPopup(popupContent).openPopup();
 });
 
@@ -64,7 +64,7 @@ var DIRsoft = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   DIRsoft.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h3>Director de la escuela de software</h3></center><p></p>";
     this.bindPopup(popupContent).openPopup();
   });
 
@@ -83,7 +83,7 @@ var DIRsoft = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   DIRsist.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h3>Director de la escuela de sistemas</h3></center><p></p>";
     this.bindPopup(popupContent).openPopup();
   });
   
@@ -103,10 +103,10 @@ var DIRsoft = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   unayoe.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h2>UNAYOE</h2></center><p>La Unidad de Asesoría y Orientación al Estudiante, es la unidad organica encargada de brindar asesoramiento y orientación a los estudiantes de la Facultad en las actividades académicas para el éxito de su formación profesional.</p>";
     this.bindPopup(popupContent).openPopup();
   });
-  
+  /*
   var musica = L.polygon([
     [815,190],
     [857, 190],
@@ -123,9 +123,9 @@ var DIRsoft = L.polygon([
     var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
     this.bindPopup(popupContent).openPopup();
   });
+*/
 
-
-  
+  /*
   var publicidad = L.polygon([
     [314,424],
     [348, 424],
@@ -143,7 +143,7 @@ var DIRsoft = L.polygon([
     this.bindPopup(popupContent).openPopup();
   });
   
-
+*/
   
   var soporte = L.polygon([
     [314,651],
@@ -158,7 +158,7 @@ var DIRsoft = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   soporte.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h2>Soporte</h2></center><p>Oficina encargada del soporte y mantenimiento de los laboratorios , salones y multiple equipo de la facultad.</p>";
     this.bindPopup(popupContent).openPopup();
   });
   
@@ -178,11 +178,11 @@ var DIRsoft = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   dep_aca_sist.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h2>Departamento academico de Sistemas</h2></center><p></p>";
     this.bindPopup(popupContent).openPopup();
   });
   
-
+/*
 //para las coordenadas
 
 var popup = L.popup();
@@ -204,3 +204,4 @@ map.on('click', onMapClick);
 
 
 //fly to para viajar
+*/

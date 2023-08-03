@@ -47,10 +47,10 @@ polygon.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 polygon.on('click', function (e) {
-  var popupContent = "<center><h2>Auditorio</h2></center><p>El auditorio de la fisi</p>";
+  var popupContent = "<center><h2>Auditorio</h2></center><p>El auditorio de la fisi, lugar donde se realizan todo tipo de eventos relacionados con la facultad</p><center><img src='/img/auditorio.png' width=300px height = 150px></center>";
   this.bindPopup(popupContent).openPopup();
 });
-
+/*
 var dga = L.polygon([
   [170,52],
   [246.5,52],
@@ -67,7 +67,7 @@ dga.on('click', function (e) {
   var popupContent = "<h1>ESTE ES UN POLIGONO</h1>";
   this.bindPopup(popupContent).openPopup();
 });
-
+*/
 
 var cerseu = L.polygon([
   [213,129],
@@ -82,7 +82,7 @@ cerseu.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 cerseu.on('click', function (e) {
-  var popupContent = "<center><h2>Cerseu</h2></center><p>El Centro de Responsabilidad Social y Extensión Universitaria CERSEU - FISI, es la unidad de gestión encargada de integrar a la FISI con la comunidad, a través de la organización de actividades académicas de apoyo, programas técnicos dirigidos a la comunidad y eventos de cultura general.</p><center><img src='./imgs/cerseu.png' width=150px height = 150px></center>";
+  var popupContent = "<center><h2>Cerseu</h2></center><p>El Centro de Responsabilidad Social y Extensión Universitaria CERSEU - FISI, es la unidad de gestión encargada de integrar a la FISI con la comunidad, a través de la organización de actividades académicas de apoyo, programas técnicos dirigidos a la comunidad y eventos de cultura general.</p><center><img src='/img/cerseu.png' width=150px height = 150px></center>";
   this.bindPopup(popupContent).openPopup();
 });
 cerseu.on('click', function (e) {
@@ -105,7 +105,7 @@ direccion.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 direccion.on('click', function (e) {
-  var popupContent = "<h1>ESTE ES UN POLIGONO</h1>";
+  var popupContent = "<h1>Direccion de escuela</h1><p>Departamento encargado de dirigir y administrar la facultad.</p>";
   this.bindPopup(popupContent).openPopup();
 });
 
@@ -124,7 +124,7 @@ usgom.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 usgom.on('click', function (e) {
-  var popupContent = "<h1>ESTE ES UN POLIGONO</h1>";
+  var popupContent = "<center><h1>USGOM</h1></center><p>La Unidad de Servicios Generales y Mantenimiento, se encargada de asegurar el desarrollo ordenado y coherente de los servicios del Área de su competencia, necesarios para el cumplimiento de las actividades académicas y administrativas.</p>";
   this.bindPopup(popupContent).openPopup();
 });
 
@@ -142,7 +142,7 @@ economia.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 economia.on('click', function (e) {
-  var popupContent = "<h1>ESTE ES UN POLIGONO</h1>";
+  var popupContent = "<center><h1>Economia</h1></center><p>Unidad encargada del presupuesto tanto del personal como actividades de la facultad.</p>";
   this.bindPopup(popupContent).openPopup();
 });
 
@@ -160,7 +160,7 @@ modulo_atencion.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 modulo_atencion.on('click', function (e) {
-  var popupContent = "<h1>ESTE ES UN POLIGONO</h1>";
+  var popupContent = "<center><h2>Modulo de atencion al docente</h2></center><p>Su objetivo es mejorar la calidad de la enseñanza y el bienestar de los educadores al ofrecerles orientación pedagógica, herramientas de desarrollo profesional, asesoramiento en la gestión del aula y acceso a materiales didácticos actualizados.</p>";
   this.bindPopup(popupContent).openPopup();
 });
 
@@ -178,11 +178,11 @@ losa.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 losa.on('click', function (e) {
-  var popupContent = "<h1>ESTE ES UN POLIGONO</h1>";
+  var popupContent = "<center><h1>Losa Deportiva</h1></center><p></p><center><img src='/img/cancha_fisi.png' width=300px height = 150px></center>";
   this.bindPopup(popupContent).openPopup();
 });
 
-
+/*
 var capilla = L.polygon([
   [323, 650.5],
   [380, 650.5],
@@ -204,20 +204,20 @@ capilla.on('click', function (e) {
   map.setView(capilla.getBounds().getCenter(), zoomLevel);
   //  map.fitBounds(capilla.getBounds());
 });
-
+*/
 
 //para las coordenadas
 
-var popup = L.popup();
+//var popup = L.popup();
 
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
+//function onMapClick(e) {
+   // popup
+      //  .setLatLng(e.latlng)
+    //    .setContent("You clicked the map at " + e.latlng.toString())
+  //      .openOn(map);
+//}
 
-map.on('click', onMapClick);
+//map.on('click', onMapClick);
 
 
 //var sol = L.latLng([ 500, 500 ]);

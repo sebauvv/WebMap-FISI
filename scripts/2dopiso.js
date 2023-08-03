@@ -7,7 +7,7 @@ var bounds = [[0,0], [1000,1000]];
 var image = L.imageOverlay('../img/Piso2.png', bounds).addTo(map);
 map.fitBounds(bounds);
 
-
+/*
 var marker = L.marker([500,500],{
   draggable: true,
   title:"text",
@@ -23,14 +23,14 @@ marker.on('click', function () {
   // Hace zoom en el marcador
   map.setView(latLng, zoomLevel);
 });
+*/
 
-
-
+/*
 var entrada = L.marker([30,130],{
   text:"Entrada 1"
 }).addTo(map)
 
-
+*/
 ///////////////////////////////////////////////////////////
 //añadiendo poligono//y ,x
 var comedor = L.polygon([
@@ -46,7 +46,7 @@ comedor.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 comedor.on('click', function (e) {
-  var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+  var popupContent = "<center><h2>Comedor</h2></center><p>Lugar donde los alumnos de la facultad pueden tener un espacio agradable para ingerir sus alimentos</p>";
   this.bindPopup(popupContent).openPopup();
 });
 
@@ -64,7 +64,7 @@ var catedraticos = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   catedraticos.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h2>Sala de catedraticos</h2></center><p>Espacio reservado para profesores y académicos, diseñado para fomentar la colaboración, el intercambio de ideas y el desarrollo intelectual. Esta sala proporciona un ambiente propicio para la preparación de clases, la investigación y la interacción entre docentes de diferentes disciplinas.</p>";
     this.bindPopup(popupContent).openPopup();
   });
 
@@ -84,7 +84,7 @@ var decanato = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   decanato.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h2>Decanato</h2></center><p>El Decanato es un Órgano de Dirección y Gobierno, encargado de la Gestión Académica, Administrativa y Financiera de la Facultad. </p>";
     this.bindPopup(popupContent).openPopup();
   });
 
@@ -103,7 +103,7 @@ var decanato = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   tercio.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h2>Tercio Estudiantil</h2></center><p>Conjunto de alumnos que velan por el bienestar de sus compañeros universitarios</p>";
     this.bindPopup(popupContent).openPopup();
   });
 
@@ -122,10 +122,10 @@ var decanato = L.polygon([
     this.setStyle({ fillColor: 'blue' });
   });
   datacenter.on('click', function (e) {
-    var popupContent = "<center><h2>comedor</h2></center><p>El comedor de la fisi</p>";
+    var popupContent = "<center><h2>Micro Data Center</h2></center><p>Diseñado para proporcionar capacidades de procesamiento y almacenamiento en ubicaciones cercanas a donde se necesita, el micro data center es especialmente útil en entornos donde el espacio es limitado o donde se requiere una respuesta rápida y eficiente en términos de procesamiento de datos.</p>";
     this.bindPopup(popupContent).openPopup();
   });
-
+/*
 //para las coordenadas
 
 var popup = L.popup();
@@ -138,7 +138,7 @@ function onMapClick(e) {
 }
 
 map.on('click', onMapClick);
-
+*/
 
 //var sol = L.latLng([ 500, 500 ]);
 //L.marker(sol).addTo(map);
