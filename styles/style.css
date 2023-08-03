@@ -1,0 +1,96 @@
+#mapa {
+    background-color: rgba(43, 42, 42, 0);
+    height: 700px;
+    width: 600px;
+}
+
+.time-control {
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background: rgba(104, 100, 100, 0.8);
+    border: 1px solid #615c5c;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #000000;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+
+.mapa-content {
+    position: absolute;
+
+    perspective: 850px; 
+    left: 50%;
+    top: 60%;
+
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    padding: 10px;
+}
+
+.conjunto-sliders {
+    position:relative;
+    max-width: 58rem;
+    margin: 0 auto;
+
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom:1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0;
+    height: 0.5;
+    border-radius: 50%;
+    background-color: #ffff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#dimension-section{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#button_3d, #button_2d{
+    margin: 5px;
+    height: 50px;
+    width: 70px;
+}

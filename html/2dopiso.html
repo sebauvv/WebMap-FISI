@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -63,9 +63,16 @@
   </nav>
 
   <div class="mapa">
+
+    <div id="dimension-section"> <!--Luego lo hago como checkbox ig-->
+      <button id="button_3d">2.5D</button>
+      <button id="button_2d">2D</button>
+    </div>
+
     <div class="mapa-content">
         <div id="mapa"></div>
-        <script src="2dopiso.js"></script> 
+        <script src="../scripts/2dopiso.js"></script> 
+        <script src="../scripts/perks_script.js"></script>
     </div>
   </div>
     

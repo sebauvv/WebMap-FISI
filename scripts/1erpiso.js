@@ -4,12 +4,8 @@ var map = L.map('mapa', {
     maxZoom:2
 });
 var bounds = [[0,0], [1000,1000]];
-var image = L.imageOverlay('Piso1.png', bounds).addTo(map);
+var image = L.imageOverlay('../img/Piso1.png', bounds).addTo(map);
 map.fitBounds(bounds);
-
-
-
- 
 
 
 
