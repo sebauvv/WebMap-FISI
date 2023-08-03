@@ -1,3 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
 #mapa {
     background-color: rgba(43, 42, 42, 0);
     height: 700px;
@@ -77,6 +102,32 @@
   
   .showcase .btn {
     margin-top: 20px;
+  }
+
+/* News Cards */
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+  }
+  
+  .news-cards img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .news-cards a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
   }
 
 ::-webkit-scrollbar {
