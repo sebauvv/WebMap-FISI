@@ -46,7 +46,7 @@
 .mapa-content {
     position: absolute;
 
-    perspective: 65px; 
+    perspective: 800px; 
     left: 50%;
     top: 70%;
 
