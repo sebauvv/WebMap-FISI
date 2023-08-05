@@ -9,7 +9,7 @@ function dimension_trigger(enabled_button, disabled_button) {
 }
 
 button_3d.addEventListener("click", () => {
-    current_map.setAttribute("style","transform: rotateX(50deg); transition: all 1s")
+    current_map.setAttribute("style","transform:rotateX(40deg); transition: all 1s")
     dimension_trigger(button_3d, button_2d);
 });
 
