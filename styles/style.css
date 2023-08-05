@@ -25,8 +25,8 @@
 
 #mapa {
     background-color: rgba(43, 42, 42, 0);
-    height: 700px;
-    width: 600px;
+    height: 1000px;
+    width: 1000px;
 }
 
 .time-control {
@@ -48,7 +48,7 @@
 
     perspective: 800px; 
     left: 50%;
-    top: 70%;
+    top: 110%;
 
     transform: translate(-50%, -50%);
 }
@@ -111,8 +111,8 @@
     align-items: center;
     text-align: center;
     justify-content: flex-end;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     color: #fff;
 }
 
