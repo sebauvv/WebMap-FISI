@@ -63,7 +63,7 @@ cerseu.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 cerseu.on('click', function (e) {
-  var popupContent = "<center><h2>Cerseu</h2></center><p>El Centro de Responsabilidad Social y Extensión Universitaria CERSEU - FISI, es la unidad de gestión encargada de integrar a la FISI con la comunidad, a través de la organización de actividades académicas de apoyo, programas técnicos dirigidos a la comunidad y eventos de cultura general.</p><center><img src='/img/cerseu.png' width=150px height = 150px></center>";
+  var popupContent = "<center><h2>Cerseu</h2></center><p>El Centro de Responsabilidad Social y Extensión Universitaria CERSEU - FISI, es la unidad de gestión encargada de integrar a la FISI con la comunidad, a través de la organización de actividades académicas de apoyo, programas técnicos dirigidos a la comunidad y eventos de cultura general.</p><center><img src='https://raw.githubusercontent.com/sebauvv/WebMap-FISI/main/img/cerseu.png' width=150px height = 150px></center>";
   this.bindPopup(popupContent).openPopup();
 });
 cerseu.on('click', function (e) {
@@ -183,7 +183,7 @@ losa.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 losa.on('click', function (e) {
-  var popupContent = "<center><h1>Losa Deportiva</h1></center><p></p><center><img src='/img/cancha_fisi.png' width=300px height = 150px></center>";
+  var popupContent = "<center><h1>Losa Deportiva</h1></center><p></p><center><img src='https://raw.githubusercontent.com/sebauvv/WebMap-FISI/main/img/cancha_fisi.png' width=300px height = 150px></center>";
   this.bindPopup(popupContent).openPopup();
 });
 losa.on('click', function (e) {
