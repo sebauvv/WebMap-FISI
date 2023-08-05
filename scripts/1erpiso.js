@@ -22,7 +22,7 @@ polygon.on('mouseout', function (e) {
   this.setStyle({ fillColor: 'blue' });
 });
 polygon.on('click', function (e) {
-  var popupContent = "<center><h2>Auditorio</h2></center><p>El auditorio de la fisi, lugar donde se realizan todo tipo de eventos relacionados con la facultad</p><center><img src='/img/auditorio.png' width=300px height = 150px></center>";
+  var popupContent = "<center><h2>Auditorio</h2></center><p>El auditorio de la fisi, lugar donde se realizan todo tipo de eventos relacionados con la facultad</p><center><img src='https://raw.githubusercontent.com/sebauvv/WebMap-FISI/main/img/auditorio.png' width=300px height = 150px></center>";
   this.bindPopup(popupContent).openPopup();
 });
 polygon.on('click', function (e) {
