@@ -7,28 +7,6 @@ var bounds = [[0,0], [1000,1000]];
 var image = L.imageOverlay('../img/Piso1.png', bounds).addTo(map);
 map.fitBounds(bounds);
 
-
-
-var marker = L.marker([500,500],{
-  draggable: true,
-  title:"text",
-  autoPanOnFocus:true,
-  riseOnHover:true
-
-}).addTo(map).bindPopup("<h1>Hola</h1><p>Fisi</p><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCPPDdpG4dYyLigQiEx-jFrz2TkErFi4YBHDzbek9Xcw&s' height=50px >")
-marker.on('click', function () {
-  // Define el nivel de zoom que deseas aplicar al hacer clic en el marcador
-  var zoomLevel =1 ;
-  // Obtiene la posición del marcador
-  var latLng = marker.getLatLng();
-  // Hace zoom en el marcador
-  map.setView(latLng, zoomLevel);
-});
-
-
-
-
-
 ///////////////////////////////////////////////////////////
 //añadiendo poligono//y ,x
 var polygon = L.polygon([
