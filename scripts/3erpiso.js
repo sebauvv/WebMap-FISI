@@ -49,6 +49,12 @@ matricula.on('click', function (e) {
   var popupContent = "<center><h2>Matricula</h2></center><p>Oficina encargada con las gestiones respecto a la matricula y rectificaciones de los alumnos de la facultad.</p>";
   this.bindPopup(popupContent).openPopup();
 });
+matricula.on('click', function (e) {
+  var zoomLevel = 1; // Establece el nivel de zoom deseado
+  map.setView(matricula.getBounds().getCenter(), zoomLevel);
+  //  map.fitBounds(capilla.getBounds());
+});
+
 
 
 var DIRsoft = L.polygon([
@@ -67,6 +73,12 @@ var DIRsoft = L.polygon([
     var popupContent = "<center><h3>Director de la escuela de software</h3></center><p></p>";
     this.bindPopup(popupContent).openPopup();
   });
+  DIRsoft.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(DIRsoft.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
 
 
 
@@ -86,6 +98,12 @@ var DIRsoft = L.polygon([
     var popupContent = "<center><h3>Director de la escuela de sistemas</h3></center><p></p>";
     this.bindPopup(popupContent).openPopup();
   });
+  DIRsist.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(DIRsist.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
   
 
 
@@ -106,6 +124,12 @@ var DIRsoft = L.polygon([
     var popupContent = "<center><h2>UNAYOE</h2></center><p>La Unidad de Asesoría y Orientación al Estudiante, es la unidad organica encargada de brindar asesoramiento y orientación a los estudiantes de la Facultad en las actividades académicas para el éxito de su formación profesional.</p>";
     this.bindPopup(popupContent).openPopup();
   });
+  unayoe.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(unayoe.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
   /*
   var musica = L.polygon([
     [815,190],
@@ -161,6 +185,12 @@ var DIRsoft = L.polygon([
     var popupContent = "<center><h2>Soporte</h2></center><p>Oficina encargada del soporte y mantenimiento de los laboratorios , salones y multiple equipo de la facultad.</p>";
     this.bindPopup(popupContent).openPopup();
   });
+  soporte.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(soporte.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
   
 
 
@@ -181,6 +211,12 @@ var DIRsoft = L.polygon([
     var popupContent = "<center><h2>Departamento academico de Sistemas</h2></center><p></p>";
     this.bindPopup(popupContent).openPopup();
   });
+  dep_aca_sist.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(dep_aca_sist.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
   
 /*
 //para las coordenadas

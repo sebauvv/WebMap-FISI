@@ -49,6 +49,12 @@ comedor.on('click', function (e) {
   var popupContent = "<center><h2>Comedor</h2></center><p>Lugar donde los alumnos de la facultad pueden tener un espacio agradable para ingerir sus alimentos</p>";
   this.bindPopup(popupContent).openPopup();
 });
+comedor.on('click', function (e) {
+  var zoomLevel = 1; // Establece el nivel de zoom deseado
+  map.setView(comedor.getBounds().getCenter(), zoomLevel);
+  //  map.fitBounds(capilla.getBounds());
+});
+
 
 
 var catedraticos = L.polygon([
@@ -67,6 +73,12 @@ var catedraticos = L.polygon([
     var popupContent = "<center><h2>Sala de catedraticos</h2></center><p>Espacio reservado para profesores y académicos, diseñado para fomentar la colaboración, el intercambio de ideas y el desarrollo intelectual. Esta sala proporciona un ambiente propicio para la preparación de clases, la investigación y la interacción entre docentes de diferentes disciplinas.</p>";
     this.bindPopup(popupContent).openPopup();
   });
+  catedraticos.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(catedraticos.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
 
 
 
@@ -87,6 +99,12 @@ var decanato = L.polygon([
     var popupContent = "<center><h2>Decanato</h2></center><p>El Decanato es un Órgano de Dirección y Gobierno, encargado de la Gestión Académica, Administrativa y Financiera de la Facultad. </p>";
     this.bindPopup(popupContent).openPopup();
   });
+  decanato.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(decanato.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
 
 
 
@@ -106,6 +124,12 @@ var decanato = L.polygon([
     var popupContent = "<center><h2>Tercio Estudiantil</h2></center><p>Conjunto de alumnos que velan por el bienestar de sus compañeros universitarios</p>";
     this.bindPopup(popupContent).openPopup();
   });
+  tercio.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(tercio.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
 
 
   
@@ -125,6 +149,12 @@ var decanato = L.polygon([
     var popupContent = "<center><h2>Micro Data Center</h2></center><p>Diseñado para proporcionar capacidades de procesamiento y almacenamiento en ubicaciones cercanas a donde se necesita, el micro data center es especialmente útil en entornos donde el espacio es limitado o donde se requiere una respuesta rápida y eficiente en términos de procesamiento de datos.</p>";
     this.bindPopup(popupContent).openPopup();
   });
+  datacenter.on('click', function (e) {
+    var zoomLevel = 1; // Establece el nivel de zoom deseado
+    map.setView(datacenter.getBounds().getCenter(), zoomLevel);
+    //  map.fitBounds(capilla.getBounds());
+  });
+  
 /*
 //para las coordenadas
 

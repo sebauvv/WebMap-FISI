@@ -27,9 +27,6 @@ marker.on('click', function () {
 
 
 
-var entrada = L.marker([30,130],{
-  text:"Entrada 1"
-}).addTo(map)
 
 
 ///////////////////////////////////////////////////////////
@@ -50,6 +47,12 @@ polygon.on('click', function (e) {
   var popupContent = "<center><h2>Auditorio</h2></center><p>El auditorio de la fisi, lugar donde se realizan todo tipo de eventos relacionados con la facultad</p><center><img src='/img/auditorio.png' width=300px height = 150px></center>";
   this.bindPopup(popupContent).openPopup();
 });
+polygon.on('click', function (e) {
+  var zoomLevel = 1; // Establece el nivel de zoom deseado
+  map.setView(polygon.getBounds().getCenter(), zoomLevel);
+  //  map.fitBounds(capilla.getBounds());
+});
+
 /*
 var dga = L.polygon([
   [170,52],
@@ -108,6 +111,12 @@ direccion.on('click', function (e) {
   var popupContent = "<h1>Direccion de escuela</h1><p>Departamento encargado de dirigir y administrar la facultad.</p>";
   this.bindPopup(popupContent).openPopup();
 });
+direccion.on('click', function (e) {
+  var zoomLevel = 1; // Establece el nivel de zoom deseado
+  map.setView(direccion.getBounds().getCenter(), zoomLevel);
+  //  map.fitBounds(capilla.getBounds());
+});
+
 
 
 
@@ -127,6 +136,12 @@ usgom.on('click', function (e) {
   var popupContent = "<center><h1>USGOM</h1></center><p>La Unidad de Servicios Generales y Mantenimiento, se encargada de asegurar el desarrollo ordenado y coherente de los servicios del Área de su competencia, necesarios para el cumplimiento de las actividades académicas y administrativas.</p>";
   this.bindPopup(popupContent).openPopup();
 });
+usgom.on('click', function (e) {
+  var zoomLevel = 1; // Establece el nivel de zoom deseado
+  map.setView(usgom.getBounds().getCenter(), zoomLevel);
+  //  map.fitBounds(capilla.getBounds());
+});
+
 
 
 var economia = L.polygon([
@@ -145,6 +160,12 @@ economia.on('click', function (e) {
   var popupContent = "<center><h1>Economia</h1></center><p>Unidad encargada del presupuesto tanto del personal como actividades de la facultad.</p>";
   this.bindPopup(popupContent).openPopup();
 });
+economia.on('click', function (e) {
+  var zoomLevel = 1; // Establece el nivel de zoom deseado
+  map.setView(economia.getBounds().getCenter(), zoomLevel);
+  //  map.fitBounds(capilla.getBounds());
+});
+
 
 
 var modulo_atencion = L.polygon([
@@ -163,6 +184,12 @@ modulo_atencion.on('click', function (e) {
   var popupContent = "<center><h2>Modulo de atencion al docente</h2></center><p>Su objetivo es mejorar la calidad de la enseñanza y el bienestar de los educadores al ofrecerles orientación pedagógica, herramientas de desarrollo profesional, asesoramiento en la gestión del aula y acceso a materiales didácticos actualizados.</p>";
   this.bindPopup(popupContent).openPopup();
 });
+modulo_atencion.on('click', function (e) {
+  var zoomLevel = 1; // Establece el nivel de zoom deseado
+  map.setView(modulo_atencion.getBounds().getCenter(), zoomLevel);
+  //  map.fitBounds(capilla.getBounds());
+});
+
 
 
 var losa = L.polygon([
@@ -181,6 +208,12 @@ losa.on('click', function (e) {
   var popupContent = "<center><h1>Losa Deportiva</h1></center><p></p><center><img src='/img/cancha_fisi.png' width=300px height = 150px></center>";
   this.bindPopup(popupContent).openPopup();
 });
+losa.on('click', function (e) {
+  var zoomLevel = 1; // Establece el nivel de zoom deseado
+  map.setView(losa.getBounds().getCenter(), zoomLevel);
+  //  map.fitBounds(capilla.getBounds());
+});
+
 
 /*
 var capilla = L.polygon([
